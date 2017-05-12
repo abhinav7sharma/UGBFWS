@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html><head>
+<title>UGBFWS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="stylesheet1.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+ <ul class="w3-navbar w3-white w3-card-2  w3-padding-8" id="myNavbar">
+    <li>
+          <a href="index.html"><img align="center" src="pics/logo.jpg" height="70%" width="70%"/></a>
+        </li>
+    <li><h3>UGBFWS</h3></li>
+    <!-- Right-sided navbar links -->
+    <li class="w3-right w3-hide-small">
+      <a href="index.html">ABOUT</a>
+      <a href="index.html"><i class="fa fa-user"></i> TEAM</a>
+      <a href="tieups.html"><i class="fa fa-th"></i> TIE-UPS</a>
+      <a href="index.html"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="notifications.html"><i class="glyphicon glyphicon-globe"></i>NOTIFICATIONS</a>
+       <a href="download.html"><i class="glyphicon glyphicon-download"></i>DOWNLOAD</a>
+    </li>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <li>
+      <a href="javascript:void(0)" class="w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars w3-padding-right w3-padding-left"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- Sidenav on small screens when clicking the menu icon -->
+<nav class="w3-sidenav w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" onclick="w3_close()">ABOUT</a>
+  <a href="index.html" onclick="w3_close()">FOUNDERS</a>
+  <a href="tieups.html" onclick="w3_close()">TIE-UPS</a>
+  <a href="index.html" onclick="w3_close()">CONTACT</a>
+  <a href="notifications.html" onclick="w3_close()">NOTIFICATIONS</a>
+  <a href="download.html" onclick="w3_close()">DOWNLOAD</a>
+</nav>
+
+
+<div class="w3-container w3-padding-128"><h3 align="center">NOTIFICATIONS</h3>
+<div class=""table-responsive>
+  <table class="table table-hover">
+    <tr>
+       <th>No.</th>
+       <th>Notification</th>
+       <th>Date</th>
+       <th>View</th>
+       <th>Download</th>
+      </tr>
+<tbody>
+    <tr>
+    <td>1.</td>
+    <td>First Notification</td>
+    <td>06/07/2016</td>
+    <td><a href="notifications/Notification-1.pdf" target="_blank">Click here</a></td>
+    <td><a href="notifications/Notification-1.pdf" download>Download</a></td>
+    </tr>
+    <tr>
+	    <td>2.</td>
+	    <td>Second Notification</td>
+	    <td>06/07/2016</td>
+	    <td><a href="Notification-3.pdf" target="_blank">Click here</a></td>
+	    <td><a href="Notification-3.pdf" download>Download</a></td>
+    </tr>
+    <tr>
+	    <td>3.</td>
+	    <td>Third Notification</td>
+	    <td>12/10/2016</td>
+	    <td><a href="notifications/Notification-3.pdf" target="_blank">Click here</a></td>
+	    <td><a href="notifications/Notification-3.pdf" download>Download</a></td>
+    </tr>
+    <tr>
+	    <td>4.</td>
+	    <td>Fourth Notification</td>
+	    <td>12/10/2016</td>
+	    <td><a href="notifications/Notification-4.pdf" target="_blank">Click here</a></td>
+	    <td><a href="notifications/Notification-4.pdf" download>Download</a></td>
+    </tr>
+    <tr>
+	    <td>5.</td>
+	    <td>Fifth Notification</td>
+	    <td>12/10/2016</td>
+	    <td><a href="notifications/Notification-5.pdf" target="_blank">Click here</a></td>
+	    <td><a href="notifications/Notification-5.pdf" download>Download</a></td>
+    </tr>
+ </tbody>
+</div>
+</div>
+<div class="footer navbar-fixed-bottom">
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-35">
+  <div class="w3-large w3-section">
+  <p>Connect with us on facebook</p>
+    <a href="https://www.facebook.com/Ugb-family-welfare-society-112431895867779/?hc_ref=SEARCH&fref=nf" target="_blank"><i class="fa fa-facebook-official w3-hover-text-indigo"></i></a>
+    <i class="fa fa-flickr w3-hover-text-red"></i>
+    <i class="fa fa-instagram w3-hover-text-purple"></i>
+    <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+    <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+  </div>
+  <p>Copyright &copy UGBFWS 2016. All Rights Reserved</p>
+  <p align="right">Developed and maintained by UGBFWS</p>
+</footer>
+</div>
+</div>
+<script>
+<!-- Google Map Location -->
+var myCenter = new google.maps.LatLng(30.317225,78.031024);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 12,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidenav when clicking the menu icon
+var mySidenav = document.getElementById("mySidenav");
+
+function w3_open() {
+    if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = 'none';
+    } else {
+        mySidenav.style.display = 'block';
+    }
+}
+
+// Close the sidenav with the close button
+function w3_close() {
+    mySidenav.style.display = "none";
+}
+</script>
+
+</body>
+</html>
